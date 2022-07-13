@@ -179,7 +179,8 @@ task_list[0] = "eat cake"
 
 ```
 save the file and run it in the terminal.
-* Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
+
+Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
 
 # Adding objects in a list
 
