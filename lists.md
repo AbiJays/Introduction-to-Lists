@@ -5,7 +5,7 @@
 Hello there, today we are looking at and understanding Python Lists, our learning objectives for this speedy run-down are... 
 
 ### Learning Objectives
- - Understand the general concept of what a list is
+ - Understand the general concept of what a list is in Python
  - Create a list
  - Access an element in a list.
  - Alter list items by 
@@ -52,15 +52,15 @@ code .
 
 We start by giving our list a name and because you cannot use spaces within variables we will follow convention and use an underscore to separate the words. 
 
-There are other naming conventions but this is not important right now.
-In our file We will type task_list
-
+In our file we will type task_list
 
 ```python
 # lists.py
 
 task_list
 ```
+
+There are other naming conventions but this is not important right now.
 
 To relate our list items to their variable we use the assignment operator: "="
 
@@ -91,7 +91,7 @@ task_list = ["eat pie", "watch clouds", "drink water"]
 And then we'll save it!
 
 ## Now What
-So we've created a beautiful list and we can check it exists under task_name by adding a return statement, so the list is actually returned to us. To do this we will use the print function. This is a built in function of Python and prints whatever you specify.
+So we've created a beautiful list and we can check it exists under task_list by adding a return statement, so the list is actually returned to us. To do this we will use the print function. This is a built in function of Python and prints whatever you specify.
 
 ```python
 # lists.py
@@ -106,15 +106,15 @@ Save again with command and s
 Great, done, so... where is it printing out? Is it printing out? No, because we have not run the file. 
 To run the file we will use the VSC terminal. Using the shortcut "control + backtick" the terminal will open in VSC directly or you can use mac terminal where we created the file in the first place, you just need to ensure you're within your working folder where that file exists.
 
-In terminal we will type "python3" , which tells your computer to interpret your file with python and then the file name.
+In the terminal we will type "python3" , this tells your computer to interpret your file with python and then the file name.
 
 ```python
 #Terminal
 
-python3 task_list
+python3 lists.py
 ```
 
-Then hit enter and your list should be printed out within terminal.
+Then hit enter and your list should be printed out in the terminal.
 
 
 ```python
@@ -125,11 +125,15 @@ Then hit enter and your list should be printed out within terminal.
 
 # Index
 
-Lists are used to collate objects together as a collection but how do we access those objects within our list? Well, this is where the ordered aspect of lists comes in. Lists are indexed, they are numbered and you can access what's written in the list at each index point. 
+Lists are used to collate objects together as a collection but how do we access those objects within our list? Well, this is where the ordered aspect of lists comes in. 
 
 List items are stored and saved in the order initialised and they cannot be shuffled around. Think less of a loose bag jostling your items and more of a filing cabinet, with separate files containing the objects.
 
-To reference the index point and therefore the object stored at that index we use the variable name followed by an opening square bracket and the index number for said object but importantly, indexes start at 0. Which I will explain further but first let's see it in practice. 
+The objects within our list, because they are ordered are infact indexed, they are numbered and you can access what's written in the list using the index point. 
+
+To reference the index point and therefore the object stored at that index we use the variable name followed by an opening square bracket and the index number for said object .
+
+But importantly, indexes start at 0. Which I will explain further but first let's see it in practice. 
 
 
 ```python
@@ -174,7 +178,7 @@ Lists have their limits, if you don't know the index of the object you are searc
 
 # Editing/ changing the objects
 
-We edit or change an object using the index, to change 'eat pie' to 'eat cake' we need to reassign the the 0 index and to do so we type 
+We edit or change an object using the index, to change 'eat pie' to 'eat cake' we need to reassign the 0 index and to do so we type 
 
 ```python
 #lists.py
@@ -205,7 +209,7 @@ This is because Python code is run from top to bottom.
 
 # Adding objects in a list
 
-To add an object we use the append method and as I'm noticing now I've actually forgotten to include an incredbily important task to my to do list: day-dream. 
+To add an object we use the append method, FUNNILY ENOUGH as I'm noticing now I've actually forgotten to include an incredbily important task to my to do list: day-dream. 
 
 First we will write the list variable because the list is where we want to add the item to, then call the append method ".append()" and within the brackets we put the object we want to add to the list. Again, because it's a string we must use quotation marks.
 
@@ -225,7 +229,7 @@ python3 lists.py
 
 ```
 
-Oh but wait, why can't we see our latest edition to our list? Because we didn't add a print statement so the code didn't know to return anything to us. Let's do that now.
+Oh but wait, why can't we see our latest edition to our list? Because we didn't add a print statement after the alteration so the code didn't know to return the latest list to us. Let's do that now.
 
 ```python
 #lists.py
@@ -238,7 +242,7 @@ print(task_list)
 
 To remove an item we use the pop method. How convenient that I actually don't want day-dream on my task list so let's remove it using the pop() method.
 
-Similarly to the append() method pop() can only remove the last item in a list so it doesn't need anything written in the brackets.
+Similarly to the append() method, pop() can only affect the last item in a list and as such it doesn't need anything written in the brackets.
 
 ```python
 #lists.py
@@ -249,6 +253,7 @@ print(task_list)
 
 ```
 
+We save it and run the code again and...
 
 # To find out the length of a list
 We use the len() function, to do so we write len() with task_list as its parameter and then in order to return this so we can see the length we'll save it to a variable and then print it out.
@@ -264,3 +269,6 @@ print(tasks_num)
 So what have we learned?
 
 We know what a list is, we know how to create a list with objects, we know how to access an individual item in the list, how to edit, add and remove objects from a list and how to get the length of a list. There are a number of methods that come built in with lists and I'd recommend having a look through them, just to familiarise yourself with the possibilities.
+
+
+Congratulations on your Python List knowledge!
