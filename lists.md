@@ -166,9 +166,9 @@ once we save and run the file again you should see 'drink water' appear.
 Lists have their limits, if you don't know the index of the object you are searching for you will have to go through the entire collection to find it.
 
 
-# So how do we edit/ change the objects
+# Editing/ changing the objects
 
-We use the index, to change 'eat pie' to 'eat cake' we need to reassign the the 0 index and to do so we type 
+We do so by using the index, to change 'eat pie' to 'eat cake' we need to reassign the the 0 index and to do so we type 
 
 ```python
 #lists.py
@@ -179,7 +179,7 @@ task_list[0] = "eat cake"
 
 ```
 save the file and run it in the terminal.
-Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
+* Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
 
 # Adding objects in a list
 
