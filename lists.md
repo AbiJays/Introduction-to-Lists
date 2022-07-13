@@ -1,6 +1,6 @@
 # An Introduction to Lists
 
-**15 minutes**
+**10-15 minutes**
 
 Hello there, today we are looking at and understanding Python Lists, our learning objectives for this speedy run-down are... 
 
@@ -28,18 +28,20 @@ Task List
 - watch clouds
 - drink water
 
-and anything else you have planned for the day. This list of elements is stored under the name, or variable of Task List. 
+and anything else you have planned for the day. This list of elements is stored or contained under the name, or variable of Task List. 
 
 Does that make sense?
 
 
 ## So let's get to making our very first Python list.
 
-We need to create a file in order to do this so in your terminal in your work folder, we are going to type and hit enter
+We need to create a file in order to do this so in your terminal in your work folder, we are going to type 
 
 ```
 touch lists.py
 ```
+
+and hit enter
 
 we are then going to open our new file 'lists' in Virtual Studio Code by typing in terminal
 
@@ -49,7 +51,7 @@ code .
 
 ## Commence listing
 
-In order to create a list we need a variable to name it, let's create that same Task List but because you cannot use spaces within variable names we will follow convention and use an underscore to separate the words. There are other naming conventions but this is not important right now as this is what we are going to use.
+We start by giving our list a name and because you cannot use spaces within variables we will follow convention and use an underscore to separate the words. We will type task_list
 
 In lists.py we are going to type our variable name of:
 
@@ -58,8 +60,9 @@ In lists.py we are going to type our variable name of:
 
 task_list
 ```
+There are other naming conventions but this is not important right now as this is what we are going to use.
 
-In order to make the variable the name of our list we will need to assign it as such so we use an assignment operator - "="
+To relate our list items to our list name, i.e. variable we use the assignment operator: "="
 
 ```python
 # lists.py
