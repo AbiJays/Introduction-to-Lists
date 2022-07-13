@@ -178,20 +178,35 @@ We do so by using the index, to change 'eat pie' to 'eat cake' we need to reassi
 task_list[0] = "eat cake"
 
 ```
-save the file and run it in the terminal.
 
-Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
-
-# Adding objects in a list
-
-To add an object we use the append method and as I'm noticing now I've actually forgotten to include an incredbily important task to my to do list: day-dream. To do this we call the list variable, the append method involves writing ".append()" and within the brackets we put the object we want to add to the list. 
-Append will always add items to the end of our list.
+And we want to print this new list out so we add a print statement again.
 
 ```python
 #lists.py
 
-task_list = ["eat pie", "watch clouds", "drink water"]
+...
 
+print(task_list)
+
+```
+
+save the file and run it in the terminal.
+
+Note how the previous prints returned the objects assigned to the original task_list and it's only the print statement after reassigning that returns our edited list. 
+
+This is because Python code is run from top to bottom.
+
+# Adding objects in a list
+
+To add an object we use the append method and as I'm noticing now I've actually forgotten to include an incredbily important task to my to do list: day-dream. 
+
+First we will write the list variable because the list is where we want to add the item to, then call the append method ".append()" and within the brackets we put the object we want to add to the list. Again, because it's a string we must use quotation marks.
+
+Append will always add items to the end of our list.
+
+```python
+#lists.py
+...
 task_list.append("day-dream")
 
 ```
@@ -202,27 +217,43 @@ Save the file and let's run the code in the terminal
 python3 lists.py
 
 ```
-# Removing items from a list
 
-To remove an item we use the pop method. I've realised that I don't actually want day-dream on my task list so let's remove day-dream by using the pop() method.
+Oh but wait, why can't we see our latest edition to our list? Because we didn't add a print statement so the code didn't know to return anything to us. Let's do that now.
 
 ```python
 #lists.py
 
-task_list = ["eat pie", "watch clouds", "drink water"]
-
-task_list.append("day-dream")
+print(task_list)
 
 ```
-Similarly to the append() method pop() can only remove the last item in a list.
+
+# Removing items from a list
+
+To remove an item we use the pop method. How convenient that I actually don't want day-dream on my task list so let's remove it using the pop() method.
+
+Similarly to the append() method pop() can only remove the last item in a list so it doesn't need anything written in the brackets.
+
+```python
+#lists.py
+
+task_list.pop("day-dream")
+
+print(task_list)
+
+```
 
 
 # To find out the length of a list
-We use the len() function. 
+We use the len() function, which we must save to a variable and put task_list as the parameter.
 
 ```
-tasks_num = task_list.len()
+tasks_num = len(task_list)
 
 print(tasks_num)
 ```
 
+# Recap
+
+So what have we learned?
+
+We know what a list is, we know how to create a list with objects, we know how to access an individual item in the list, how to edit, add and remove objects from a list and how to get the length of a list. There are a number of methods that come built in with lists and I'd recommend having a look through them, just to familiarise yourself with the possibilities.
