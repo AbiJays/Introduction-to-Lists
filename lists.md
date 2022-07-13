@@ -54,8 +54,8 @@ code .
 We start by giving our list a name and because you cannot use spaces within variables we will follow convention and use an underscore to separate the words. 
 
 There are other naming conventions but this is not important right now as this is what we are going to use.
-
 In our file We will type task_list
+
 
 ```python
 # lists.py
@@ -79,9 +79,9 @@ And then we add our items, in Python this requires using square brackets - almos
 task_list = []
 ```
 
-## Elements
+## Objects
 
-We will separate the objects in our list with commas, and due to the objects consisting of strings we will need to contain them in quotation marks:
+When adding the objects to our list we must show they are separate, which we do with commas, and due to the objects consisting of strings we will need to contain them in quotation marks:
 
 ```python
 # lists.py
@@ -91,7 +91,7 @@ task_list = ["eat pie", "watch clouds", "drink water"]
 Then we'll save it!
 
 ## Now What
-So we've created a beautiful list, but now what. Well, to check our list exists under the variable name we need to add a return statement, so the list is actually returned to us. To do this we will use the print function. This is a built in function of Python and prints whatever you specify.
+So we've created a beautiful list and we can check it exists under task_name by adding a return statement, so the list is actually returned to us. To do this we will use the print function. This is a built in function of Python and prints whatever you specify.
 
 ```python
 # lists.py
@@ -103,7 +103,8 @@ print(task_list)
 ```
 Save again command and s
 
-Great, done, but why isn't the list printing out? Because we have not run the file. We will do this within the VSC terminal. Using the shortcut "control + backtick" the terminal will open in VSC directly or you can use the general terminal window we created the file within in the first place, you just need to ensure you're within your working folder where the lists.py file is saved.
+Great, done, so... where is it printing out? Is it printing out? No, because we have not run the file. 
+To run the file we will use the VSC terminal. Using the shortcut "control + backtick" the terminal will open in VSC directly or you can use the general terminal window we created the file in the first place, you just need to ensure you're within your working folder where the lists.py file is saved.
 
 We will type "python3" , which tells your computer to to interpret your file with python3 and then the file name.
 
@@ -112,7 +113,7 @@ We will type "python3" , which tells your computer to to interpret your file wit
 
 python3 task_list
 ```
-Then hit enter and your list will be printed out within terminal.
+Then hit enter and your list should be printed out within terminal.
 
 ```python
 #Terminal
@@ -122,9 +123,9 @@ Then hit enter and your list will be printed out within terminal.
 
 # Index
 
-Lists are used to collate objects together as a collection but how do we access those objects within our list? Well, this is where the ordered aspect of lists comes in. Lists are indexed, they are numbered and you can access what's written in the list at each index point so they are stored and saved in the order initialised and they cannot be shuffled around. Think less of a loose bag jostling your items around and more of a filing cabinet, with separate files containing the objects.
+Lists are used to collate objects together as a collection but how do we access those objects within our list? Well, this is where the ordered aspect of lists comes in. Lists are indexed, they are numbered and you can access what's written in the list at each index point. List items are stored and saved in the order initialised and they cannot be shuffled around. Think less of a loose bag jostling your items around and more of a filing cabinet, with separate files containing the objects.
 
-To reference the index point and therefore the object stored at that index we use the variable name followed by opening square bracket and the index number for it but importantly, indexes start at 0.
+To reference the index point and therefore the object stored at that index we use the variable name followed by opening square bracket and the index number for it but importantly, indexes start at 0. Which I will explain further but first let's see it in practice. 
 
 
 ```python
@@ -137,13 +138,19 @@ print(task_list[0])
 
 ```
 
+# What's the deal with zero?
+
 If we look at a storage container, this is our list
+
 | eat pie | watch clouds | drink water |
                             
 
 If we want to access the initial object we want to access the first memory address, this first address is by default 0, after which is the first derivative and the second derivative.
+If we want to access the first memory address we don't want to go anywhere, we don't want to move a space so we start at 0.
+
 | eat pie | watch clouds | drink water |
      ^           1              2
+
 
 You can also access items from the end of the list by using a negative index.
 To get drink water we'd write
@@ -159,19 +166,19 @@ once we save and run the file again you should see 'drink water' appear.
 Lists have their limits, if you don't know the index of the object you are searching for you will have to go through the entire collection to find it.
 
 
-# From the index we can alter or update an object by reassigning it
+# So how do we edit/ change the objects
 
-To change 'eat pie' to eat cake we need to reassign the task_list[0] and to do this we type
+We use the index, to change 'eat pie' to 'eat cake' we need to reassign the the 0 index and to do so we type 
 
 ```python
 #lists.py
 
-task_list = ["eat pie", "watch clouds", "drink water"]
+...
 
 task_list[0] = "eat cake"
 
 ```
-save the file and run it in the terminal
+save the file and run it in the terminal.
 Note how the previous prints returned the objects assigned to the original task_list and it's only once reassigned that task_list[0] prints out as the new objects and has been reassigned. This is because Python code is run from top to bottom.
 
 # Adding objects in a list
