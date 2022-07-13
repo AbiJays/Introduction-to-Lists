@@ -18,7 +18,7 @@ Hello there, today we are looking at and understanding Python Lists, our learnin
 
 To start with, let's get to grips with what a list actually is:
 
-A list, as I'm sure you are aware in general is a group of elements/ objects, be that your favourite holiday destinations, snacks, or task list for instance.
+A list, as I'm sure you are aware in general is a group of elements/ objects, be that your favourite holiday destinations, snacks, or task list for instance. A list is a collection.
 
 And a Python list is just that, it is a mutable, ordered data structure, a collection of objects, stored under one variable: i.e. a name.
 For instance that Task List could consist of
@@ -51,16 +51,17 @@ code .
 
 ## Commence listing
 
-We start by giving our list a name and because you cannot use spaces within variables we will follow convention and use an underscore to separate the words. We will type task_list
+We start by giving our list a name and because you cannot use spaces within variables we will follow convention and use an underscore to separate the words. 
 
-In lists.py we are going to type our variable name of:
+There are other naming conventions but this is not important right now as this is what we are going to use.
+
+In our file We will type task_list
 
 ```python
 # lists.py
 
 task_list
 ```
-There are other naming conventions but this is not important right now as this is what we are going to use.
 
 To relate our list items to our list name, i.e. variable we use the assignment operator: "="
 
